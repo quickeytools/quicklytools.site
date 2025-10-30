@@ -1,1 +1,1 @@
-# quicklytools.site
+# quicklytools.net
