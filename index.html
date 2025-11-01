@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickey Tools - All Smart Tools in One Place</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --dark-blue: #1e40af;
+            --light-blue: #93c5fd;
+            --bg-gray: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --rounded: 8px;
+            --transition: all 0.3s ease;
+        }
+        * {margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+        body {background-color:var(--bg-gray);color:var(--text-dark);line-height:1.6;}
+        .container {width:100%;max-width:1200px;margin:0 auto;padding:0 20px;}
+        header {background-color:var(--white);box-shadow:var(--shadow);position:sticky;top:0;z-index:100;padding:15px 0;}
+        .header-container {display:flex;justify-content:space-between;align-items:center;}
+        .logo {font-size:24px;font-weight:700;color:var(--primary-blue);text-decoration:none;}
+        .logo span {color:var(--text-dark);}
+        nav ul {display:flex;list-style:none;gap:25px;}
+        nav ul li a {text-decoration:none;color:var(--text-dark);font-weight:500;transition:var(--transition);}
+        nav ul li a:hover {color:var(--primary-blue);}
+        .hero {background:linear-gradient(135deg,var(--primary-blue),var(--dark-blue));color:var(--white);padding:80px 0;text-align:center;}
+        .hero h1 {font-size:2.5rem;margin-bottom:20px;}
+        .hero p {font-size:1.1rem;max-width:700px;margin:0 auto 30px;}
+        .cta-button {display:inline-block;background-color:var(--white);color:var(--primary-blue);padding:12px 30px;border-radius:var(--rounded);text-decoration:none;font-weight:600;transition:var(--transition);}
+        .cta-button:hover {transform:translateY(-3px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);}
+        .tools-section {padding:60px 0;}
+        .section-header {text-align:center;margin-bottom:40px;}
+        .section-header h2 {font-size:1.8rem;margin-bottom:10px;color:var(--text-dark);}
+        .tools-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:25px;}
+        .tool-card {background-color:var(--white);border-radius:var(--rounded);padding:25px;box-shadow:var(--shadow);transition:var(--transition);}
+        .tool-card:hover {transform:translateY(-5px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);}
+        .tool-icon-container {width:50px;height:50px;background-color:var(--light-blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:15px;color:var(--primary-blue);font-size:20px;}
+        .tool-card h3 {font-size:1.1rem;margin-bottom:10px;}
+        .tool-button {display:inline-block;background-color:var(--primary-blue);color:var(--white);padding:8px 20px;border-radius:var(--rounded);text-decoration:none;font-size:0.9rem;font-weight:500;transition:var(--transition);}
+        .tool-button:hover {background-color:var(--dark-blue);}
+        footer {background-color:var(--text-dark);color:var(--white);padding:60px 0 30px;}
+        .footer-container {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px;}
+        .footer-links h3 {font-size:1.1rem;margin-bottom:20px;color:var(--light-blue);}
+        .footer-links ul {list-style:none;}
+        .footer-links ul li {margin-bottom:10px;}
+        .footer-links ul li a {color:var(--white);text-decoration:none;opacity:0.8;transition:var(--transition);}
+        .footer-links ul li a:hover {opacity:1;color:var(--light-blue);}
+        .contact-email {display:flex;align-items:center;gap:10px;margin-top:15px;font-size:1rem;}
+        .contact-email i {color:var(--light-blue);}
+        .footer-bottom {text-align:center;padding-top:30px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.9rem;opacity:0.7;}
+    </style>
+</head>
+<body>
 
+<header>
+    <div class="container header-container">
+        <a href="#" class="logo">Quickey<span>Tools</span></a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container">
+        <h1>All Powerful Tools in One Place</h1>
+        <p>Discover AI-powered tools for photos, videos, SEO, content & social media — all free and easy to use.</p>
+        <a href="#tools" class="cta-button">Explore Tools</a>
+    </div>
+</section>
+
+<!-- 🧩 Social Media Tools -->
+<section class="tools-section" id="tools">
+    <div class="container">
+        <div class="section-header">
+            <h2>🧩 Social Media Tools</h2>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card"><h3>Viral Trend Prediction Radar</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Voice Reels Emotion Mixer</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Multi-Platform Caption Style Converter</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Trend Comment Generator</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI Audience Match Finder</h3><a href="#" class="tool-button">Use Tool</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- 🖼️ Photo Tools -->
+<section class="tools-section" style="background-color:#f1f5f9;">
+    <div class="container">
+        <div class="section-header">
+            <h2>🖼️ Photo Tools</h2>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card"><h3>Background Remover in 4K HD</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Background Remover</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Photo Background Remover</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Photo Enhancer</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Image Background Enhancer</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI Photo Style Matcher</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Image Copyright Detector</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI Profile Picture Generator</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Photo Realism Enhancer</h3><a href="#" class="tool-button">Use Tool</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- 🎥 Video Tools -->
+<section class="tools-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>🎥 Video Tools</h2>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card"><h3>Video Background Remover</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Video Enhancer</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Video Silence Remover</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI Thumbnail Auto Maker</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Auto Caption Generator for Reels</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Video Clip Auto Cutter</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI Short Video Script Creator</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI Voice Over Text Converter</h3><a href="#" class="tool-button">Use Tool</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- 🌏 SEO Tools -->
+<section class="tools-section" style="background-color:#f1f5f9;">
+    <div class="container">
+        <div class="section-header">
+            <h2>🌏 SEO Tools</h2>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card"><h3>Keyword Researcher</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Tag Researcher</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Trading Topic Finder</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI SEO Keyword Predictor</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI Backlink Quality Checker</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>SEO Content Gap Finder</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>SEO Meta Tag Auto Creator</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI SEO Keyword Profit Calculator</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Content Gap Auto-Filler</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Visual SEO Analyzer</h3><a href="#" class="tool-button">Use Tool</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- ❄️ Content Tools -->
+<section class="tools-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>❄️ Content Tools</h2>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card"><h3>AI Content Emotion Mapper</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>AI Fact Detector for Articles</h3><a href="#" class="tool-button">Use Tool</a></div>
+            <div class="tool-card"><h3>Content Idea Recombiner</h3><a href="#" class="tool-button">Use Tool</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Important Pages</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Details</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+                <div class="contact-email">
+                    <i class="fas fa-envelope"></i>
+                    <span>ahasanahmed1826588@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Quickey Tools | All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+</body>
+                                     </html>
